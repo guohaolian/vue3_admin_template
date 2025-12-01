@@ -1,11 +1,11 @@
 import { createApp } from 'vue'
-
 import App from './App.vue'
+import ElementPlus from 'element-plus'
+import 'element-plus/dist/index.css'
 
-createApp(App).mount('#app')
+import zhCn from 'element-plus/es/locale/lang/zh-cn'
 
-const fun = () => {
-  console.log('hfdshh ')
-}
+const app = createApp(App)
 
-fun()
+app.use(ElementPlus, { locale: zhCn })
+app.mount('#app')
