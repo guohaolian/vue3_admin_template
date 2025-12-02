@@ -1,4 +1,4 @@
-<template>
+<!-- <template>
   <div>
     <el-button type="primary" size="default" :icon="Plus">主要按钮</el-button>
     <el-button type="success" size="default" :icon="Edit">编辑按钮</el-button>
@@ -37,3 +37,25 @@ const handleCurrentChange = (val: number) => {
 </script>
 
 <style scoped></style>
+ -->
+
+<template>
+  <div>
+    <h1>svg测试</h1>
+    <!-- svg:图标外层容器节点，内部需要use标签结合使用 -->
+    <!-- <svg style="width: 30px;height: 30px;"> -->
+    <!-- xlink:href: 引用外部svg文件 属性值务必#icon-图标名字  -->
+    <!-- <use xlink:href="#icon-phone" fill="blue"></use> -->
+    <!-- </svg> -->
+    <svg-icon name="home" color="pink" width="30px" height="30px"></svg-icon>
+
+  </div>
+</template>
+
+<script setup lang='ts'>
+
+
+
+</script>
+
+<style></style>
