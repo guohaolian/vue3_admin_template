@@ -48,14 +48,9 @@ const handleCurrentChange = (val: number) => {
     <!-- <use xlink:href="#icon-phone" fill="blue"></use> -->
     <!-- </svg> -->
     <svg-icon name="home" color="pink" width="30px" height="30px"></svg-icon>
-
   </div>
 </template>
 
-<script setup lang='ts'>
-
-
-
-</script>
+<script setup lang="ts"></script>
 
 <style></style>
