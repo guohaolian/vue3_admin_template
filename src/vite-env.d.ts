@@ -8,3 +8,13 @@ declare module '*.vue' {
   const Component: ReturnType<typeof defineComponent>
   export default Component
 }
+declare module '@/components' {
+  import type { Plugin } from 'vue'
+  const plugin: Plugin
+  export default plugin
+}
+declare module '@/components/index' {
+  import type { Plugin } from 'vue'
+  const plugin: Plugin
+  export default plugin
+}

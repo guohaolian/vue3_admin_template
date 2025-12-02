@@ -34,7 +34,7 @@ export default defineConfig([
       // ------------ typescript-eslint 规则 ------------
       '@typescript-eslint/no-unused-vars': 'error',
       '@typescript-eslint/prefer-ts-expect-error': 'error',
-      '@typescript-eslint/no-explicit-any': 'off',
+      //'@typescript-eslint/no-explicit-any': 'off',
       '@typescript-eslint/no-non-null-assertion': 'off',
       '@typescript-eslint/no-namespace': 'off',
       '@typescript-eslint/semi': 'off',
