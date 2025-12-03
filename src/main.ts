@@ -7,11 +7,12 @@ import gloalComponent from '@/components/index'
 import SvgIcon from '@/components/SvgIcon/index.vue'
 import zhCn from 'element-plus/es/locale/lang/zh-cn'
 import '@/styles/index.scss'
-
+import router from './router'
 const app = createApp(App)
 app.component('SvgIcon', SvgIcon)
 app.use(ElementPlus, { locale: zhCn })
 app.use(gloalComponent)
+app.use(router)
 //测试假接口能否使用
 /* import axios from 'axios'
 
