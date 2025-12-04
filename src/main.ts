@@ -15,6 +15,9 @@ app.use(ElementPlus, { locale: zhCn })
 app.use(gloalComponent)
 app.use(router)
 app.use(pinia)
+import useUserStore from '@/store/modules/user'
+const userStore = useUserStore()
+userStore.initTokenTimer()
 //测试假接口能否使用
 /* import axios from 'axios'
 
@@ -26,5 +29,6 @@ axios({
     password: '111111',
   },
 }) */
+import './permisstion'
 
 app.mount('#app')
