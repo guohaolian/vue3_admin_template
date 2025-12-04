@@ -9,7 +9,7 @@ export const constantRoute = [
     path: '/',
     component: () => import('@/layout/index.vue'),
     name: 'layout', //命名路由
-    meta: { title: 'layout', hidden: true, icon: '' },
+    meta: { title: '', hidden: true, icon: '' },
     redirect: '/home',
     children: [
       {
