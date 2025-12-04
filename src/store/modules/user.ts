@@ -5,10 +5,16 @@ import { reqLogin } from '@/api/user'
 import { GET_TOKEN, SET_TOKEN } from '@/utils/token'
 import type { loginFormData, loginResponseData } from '@/api/user/type'
 import type { UserState } from './types/type'
+
+//引入路由（常量路由）
+import { constantRoute } from '@/router/routes'
+
+//创建用户相关的小仓库
 let useUserStore = defineStore('user', {
   state(): UserState {
     return {
       token: GET_TOKEN(), //用户唯一标识token
+      menuRoutes: constantRoute, //仓库存贮生成菜单需要数组
     }
   },
   getters: {},
